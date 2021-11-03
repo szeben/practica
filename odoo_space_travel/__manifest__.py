@@ -26,6 +26,6 @@
     ],
     
     'demo' : [
-        
+        'demo/space_travel_demo.xml',
     ],
 }
