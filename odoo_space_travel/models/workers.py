@@ -10,7 +10,7 @@ class Workers(models.Model):
     name = fields.Char(string = 'Name', required=True)
     job = fields.Char(string = 'Job', required=True)
     
-    level = fields.Selection(string = 'Experience', 
+    level = fields.Selection(string = 'Level', 
                              selection=[(beginner, Beginner),
                                        (intermediate, Intermediate),
                                        (advanced, Advanced)],
