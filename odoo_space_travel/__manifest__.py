@@ -22,7 +22,8 @@
     'depends' : ['base'],
     
     'data' : [
-        
+        'security/space_travel_security.xml',
+        'security/ir.model.access.csv',
     ],
     
     'demo' : [
