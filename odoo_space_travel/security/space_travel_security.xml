@@ -3,14 +3,4 @@
     <record id="group_space_travel_admin" model="res.groups">
         <field name="name">SpaceTravel / Admin</field>
     </record>
-
-    <record id="only_active_modify" model="ir.rule">
-        <field name="name">Only Active Workers Can Be Modified</field>
-        <field name="perm_read" eval="0"></field>
-        <field name="perm_write" eval="1"></field>
-        <field name="perm_create" eval="0"></field>
-        <field name="perm_unlink" eval="1"></field>
-        <field name="domain_force">[('active','=',True)]</field>
-        <field name="model_id" ref="model_space_workers"></field>
-    </record>
 </odoo>
