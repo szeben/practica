@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="worker_view_form">
+            <field name="name">space.workers.form</field>
+            <field name="model">space.workers</field>
+            <field name="arch" type="xml">
+                <form string="Workers Form">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                        <group>
+                            <group><field name="job" /></group>
+                            <group><field name="level" /></group>
+                        </group>
+                        <notebook>
+                            <page string="Level">
+                                <field name="level" />
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>    
+            </field>
+        </record>
+        <record model="ir.ui.view" id="worker_view_list">
+            <field name="name">space.workers.list</field>
+            <field name="model">space.workers</field>
+            <field name="arch" type="xml">
+                <tree string="Workers List">
+                    <field name="name"></field>
+                    <field name="job"></field>
+                    <field name="level"></field>
+                </tree>    
+            </field>
+        </record>
+        <record model="ir.ui.view" id="worker_view_search">
+            <field name="name">space.workers.search</field>
+            <field name="model">space.workers</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"></field>
+                    <field name="job"></field>
+                    <field name="level"></field>
+                </search>    
+            </field>
+        </record>
+    </data>
+</odoo>
