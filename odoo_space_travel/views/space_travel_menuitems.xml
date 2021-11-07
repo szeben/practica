@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="travel_list_action">
+            <field name="name">Workers</field>
+            <field name="res_model">space.workers</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_content_smiling_face">
+                    Create first Worker
+                </p>
+            </field>
+        </record>
+
+        <menuitem name="Odoo Space Travel"
+                id="menu_travel"
+                sequence="1" />
+
+        <menuitem name="Odoo Space Travel"
+                id="menu_travel_sub"
+                parent="menu_travel"
+                sequence="2" />
+        
+        <menuitem name="Workers"
+                id="menu_travel_workers"
+                parent="menu_travel_sub"
+                sequence="3"
+                action="travel_list_action" />
+    </data>
+</odoo>
