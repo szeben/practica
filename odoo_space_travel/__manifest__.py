@@ -24,6 +24,7 @@
     'data' : [
         'security/space_travel_security.xml',
         'security/ir.model.access.csv',
+        'views/space_travel_menuitems.xml'
     ],
     
     'demo' : [
