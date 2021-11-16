@@ -9,8 +9,8 @@
         - Sessions
         - Attendees
     """,
-    'autor':'Odoo'
-    'website':'https://www.odoo.com'
+    'autor':'Odoo',
+    'website':'https://www.odoo.com',
     'category':'Training',
     'version':'0.1',
     'depends':'[base]',
