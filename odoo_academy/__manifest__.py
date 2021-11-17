@@ -1,4 +1,4 @@
-#-*- Python utf-8 -*-
+#-*- coding: utf-8 -*-
 
 {
     'name':'odoo academy',
@@ -13,7 +13,7 @@
     'website':'https://www.odoo.com',
     'category':'Training',
     'version':'0.1',
-    'depends':'[base]',
+    'depends':['base'],
     'data':[
         
     ],
