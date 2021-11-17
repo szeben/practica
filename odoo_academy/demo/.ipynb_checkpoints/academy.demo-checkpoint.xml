@@ -10,7 +10,7 @@
         <record model="academy.course" id="accounting_200">
             <field name="name">Accounting 200</field>
             <field name="description">
-                Accounting 200
+                Accounting 200:
                 Intermediate Accounting Course
                 Learning about Cost Accounting and pricing and Revenue Analysis.
             </field>
