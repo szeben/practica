@@ -13,4 +13,9 @@ class Course (models.Model):
     #                      selection=[('beginner','Beginner'), ('intermediate','Intermediate'),('advanced','Advanced')],
     #                      copy=False)
     active=fields.Boolean(string='Active',default=True)
+    
+    session_ids=fields.One2many(comodel_name='academy.session',
+                               inverse_name='course_id',
+                               string='Sessions')
+    
                         
