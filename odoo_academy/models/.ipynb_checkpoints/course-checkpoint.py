@@ -18,4 +18,17 @@ class Course (models.Model):
                                inverse_name='course_id',
                                string='Sessions')
     
+    base_price=fields.Float(string=' Base Price',default=0.00)
+    
+    additional_fee=fields.Float(string='Additional Fee', default=10.00)
+    
+    total_price=fields.Float(string='Total price',readonly=True)
+    
+    @api.onchange('base_price', 'additional_fee')
+    def _onchange_total_price(self):
+        if self.base_price <0.0:
+            raise UserError('Base price cannot be set as negative.')
+        
+        self.total_price=self.base_price+self.additional_fee
+    
                         
