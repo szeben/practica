@@ -33,12 +33,12 @@ class Session(models.Model):
     def _compute_end_date(self):
         for record in self:
             if not (record.start_date and record.duration):
-                record.end_date=record.start_date
+                record.end_date = record.start_date
             else:
                 duration=timedelta(days=record.duration)
                 record.end_date=record.start_date + duration
                 
-    def  _inverse_end_date(self):
+    def _inverse_end_date(self):
         for record in self:
             if record.start_date and record.end_date:
                 record.duration=(record.end_date - record.start_date).days + 1
