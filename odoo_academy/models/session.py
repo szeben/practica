@@ -37,7 +37,8 @@ class Session(models.Model):
             else:
                 duration=timedelta(days=record.duration)
                 record.end_date=record.start_date + duration
-                
+    
+    @api.depends('start_date','duration')
     def _inverse_end_date(self):
         for record in self:
             if record.start_date and record.end_date:
